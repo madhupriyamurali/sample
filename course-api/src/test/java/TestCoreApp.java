@@ -1,13 +1,14 @@
-import static org.junit.Assert.*;
-
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class TestCoreApp {
 
 	@Test
-	public void test() {
-		Boolean sample=true;
-		assert.equals(true,sample);
+	public void contextLoads() {
 	}
 
 }
