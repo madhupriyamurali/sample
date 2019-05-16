@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
 	@RequestMapping("/hello")
-	public String sayHi()
+	public Topic sayHi()
 	{
-		return "Hi";
+		Topic t =new Topic();
+		t.setId("01");
+		t.setDescription("Spring Boot with Jenkins");
+		t.setName("Java");
 	}
 }
